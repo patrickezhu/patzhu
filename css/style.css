@@ -28,10 +28,27 @@ header p {
   letter-spacing: 1px;
 }
 
+.portfolio-header {
+  text-align: center;
+  margin-top: 50px; 
+}
+
+.portfolio-header h2 {
+  font-size: 2em; /* Adjust size as needed */
+  margin: 0 0 10px 0; /* Adjust margin as needed */
+  font-weight: bold; /* Makes the title bold */
+}
+
+.portfolio-description {
+  font-size: 1em; /* Adjust size as needed */
+  color: #666; /* Adjust color as needed */
+  margin: 0 auto; /* Centering the text */
+  max-width: 80%; /* Adjust width as needed for better readability */
+}
 
 .carousel-wrapper {
-  width: 80%; /* Adjust the width as per requirement */
-  margin: 50px auto;
+  width: 90%; /* Adjust the width as per requirement */
+  margin: 20px auto;
   position: relative;
 }
 
@@ -82,10 +99,26 @@ header p {
   right: 20px;
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 10px; /* Adjust the gap as needed */
+  max-width: 90%; /* Same as the carousel */
+  margin: 70px auto; /* Space above and below the grid, centered */
+}
+
+.image-grid img {
+  width: 100%;
+  object-fit: cover; /* For square images, cover should work well */
+  height: auto; /* Maintain aspect ratio */
+}
+
 footer {
   background: #2e1f18;
   color: #EFEFEF;
   text-align: center;
+  margin-top: 50px;
+
   padding: 20px 10%;
   font-size: 1em;
 }
@@ -95,14 +128,94 @@ footer p {
   line-height: 1.7em;
 }
 
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  max-width: 80%;
+  margin: auto;
+}
+
+.instagram-embed {
+  flex: 1; /* Allows the embed to grow */
+  max-width: 300px; /* Adjust as needed */
+}
+
+.instagram-embed blockquote {
+  margin: auto !important;
+  width: 100% !important;
+}
+
+.caption-container {
+  flex: 1; /* Allows the caption to grow */
+  margin-left: 40px; /* Space between embed and caption */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  max-width: 300px; /* Adjust as needed */
+}
+
+.caption-container h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em; /* Adjust as needed */
+  text-align: center; /* Center the text horizontally */
+}
+
+.caption-container p {
+  margin: 0;
+  font-size: 1em; /* Adjust as needed */
+  text-align: center; /* Center the text horizontally */
+}
+
+.resume-container {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 80%; /* Adjust to fit your layout */
+}
+
+.resume-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .caption-container {
+    display: none; /* Hide the caption container on mobile devices */
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack the items vertically on smaller screens */
+  }
+
+  .instagram-embed {
+    max-width: 100%; /* Adjust the width of the Instagram embed on smaller screens */
+  }
+}
+
 @media (min-width: 768px) {
   .carousel-wrapper {
     width: 70%; /* Adjust as needed */
+  }
+
+  .image-grid {
+    max-width: 70%;
+  }
+
+  .resume-container {
+    max-width: 70%;
   }
 }
 
 @media (min-width: 1024px) {
   .carousel-wrapper {
-    width: 60%; /* Adjust as needed */
+    width: 800px; /* Adjust as needed */
+  }
+
+  .image-grid {
+    max-width: 800px;
+  }
+
+  .resume-container {
+    max-width: 800px;
   }
 }

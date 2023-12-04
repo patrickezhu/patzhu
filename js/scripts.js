@@ -1,5 +1,3 @@
-// scripts.js
-
 let currentIndex = 0;
 const images = document.querySelectorAll('.carousel-images img');
 const imageContainer = document.querySelector('.carousel-images .image-container');
@@ -35,13 +33,12 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 document.addEventListener('keydown', (e) => {
-  if (e.keyCode === 37) { // Left arrow key
+  if (e.keyCode === 37) {
     showImage(currentIndex - 1);
   }
-  if (e.keyCode === 39) { // Right arrow key
+  if (e.keyCode === 39) {
     showImage(currentIndex + 1);
   }
 });
 
-// Initial display setup
-showImage(0); // Show the first image when the page loads
+showImage(0);

@@ -131,14 +131,14 @@ footer p {
 .content-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Center items vertically */
+  align-items: center;
   max-width: 80%;
   margin: auto;
 }
 
 .instagram-embed {
-  flex: 1; /* Allows the embed to grow */
-  max-width: 300px; /* Adjust as needed */
+  flex: 1;
+  max-width: 300px;
 }
 
 .instagram-embed blockquote {
@@ -147,30 +147,30 @@ footer p {
 }
 
 .caption-container {
-  flex: 1; /* Allows the caption to grow */
-  margin-left: 40px; /* Space between embed and caption */
+  flex: 1;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  max-width: 300px; /* Adjust as needed */
+  justify-content: center;
+  max-width: 300px;
 }
 
 .caption-container h3 {
   margin: 0 0 10px 0;
-  font-size: 1.5em; /* Adjust as needed */
-  text-align: center; /* Center the text horizontally */
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .caption-container p {
   margin: 0;
-  font-size: 1em; /* Adjust as needed */
-  text-align: center; /* Center the text horizontally */
+  font-size: 1em;
+  text-align: center;
 }
 
 .resume-container {
   text-align: center;
   margin: 60px auto;
-  max-width: 80%; /* Adjust to fit your layout */
+  max-width: 80%; 
 }
 
 .resume-container h2 {
@@ -180,21 +180,21 @@ footer p {
 
 @media (max-width: 768px) {
   .caption-container {
-    display: none; /* Hide the caption container on mobile devices */
+    display: none;
   }
 
   .content-container {
-    flex-direction: column; /* Stack the items vertically on smaller screens */
+    flex-direction: column;
   }
 
   .instagram-embed {
-    max-width: 100%; /* Adjust the width of the Instagram embed on smaller screens */
+    max-width: 100%; 
   }
 }
 
 @media (min-width: 768px) {
   .carousel-wrapper {
-    width: 70%; /* Adjust as needed */
+    width: 70%;
   }
 
   .image-grid {
@@ -208,7 +208,7 @@ footer p {
 
 @media (min-width: 1024px) {
   .carousel-wrapper {
-    width: 800px; /* Adjust as needed */
+    width: 800px;
   }
 
   .image-grid {

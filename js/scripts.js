@@ -34,5 +34,14 @@ document.querySelector('.next').addEventListener('click', () => {
   showImage(currentIndex + 1);
 });
 
+document.addEventListener('keydown', (e) => {
+  if (e.keyCode === 37) { // Left arrow key
+    showImage(currentIndex - 1);
+  }
+  if (e.keyCode === 39) { // Right arrow key
+    showImage(currentIndex + 1);
+  }
+});
+
 // Initial display setup
 showImage(0); // Show the first image when the page loads
